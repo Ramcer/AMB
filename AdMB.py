@@ -12,6 +12,8 @@ import datetime
 import numpy as np
 from PIL import ImageGrab
 from functools import partial
+
+
 ImageGrab.grab = partial(ImageGrab.grab, all_screens=True)
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'	
